@@ -7,27 +7,30 @@
 
     <style>
        
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        max-width: 800px;
-        margin: auto;
+       body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
     }
 
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            padding: 10px;
+        }
 
-    .gallery img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 5px;
-    }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
 
 
 @media (max-width: 600px) {
-    .gallery {
-        grid-template-columns: 1fr;
-    }
+        .gallery {
+            grid-template-columns: 1fr;
+        }
 }
 
     </style>
